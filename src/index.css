@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global dark aesthetic */
+:root {
+  --accent: #ff7b00;
+}
+
+/* Subtle animated background */
+body {
+  background: radial-gradient(1200px 600px at 70% 10%, rgba(255, 123, 0, 0.15), transparent 60%),
+              linear-gradient(180deg, #0e0f12 0%, #0b0c0f 100%);
+}
+
+.glass {
+  @apply bg-gunmetal/60 backdrop-blur-md border border-white/10;
+}
+
+.btn-primary {
+  @apply inline-flex items-center justify-center rounded-md px-5 py-2.5 font-semibold bg-accent text-black hover:brightness-110 transition;
+  box-shadow: 0 8px 30px rgba(255,123,0,0.25);
+}
+
+.section {
+  @apply py-16 md:py-24;
+}
+
+.container {
+  @apply mx-auto max-w-7xl px-4;
+}
+
+.title-grad {
+  background: linear-gradient(90deg, #fff 0%, #ffecd6 50%, #ff7b00 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
